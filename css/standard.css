@@ -1,0 +1,143 @@
+:root{
+  --color:#0aa699;
+}
+*{
+  font-family: sans-serif;
+}
+html{
+    height: 100%;
+}
+body{
+  padding: 0;
+  margin: 0;
+  height: 100%;
+}
+.page{
+  display:flex;
+  justify-content: flex-start;
+  overflow: hidden;
+  min-height: 100%;
+}
+.contenu{
+  padding: 16px;
+  background-color: #e5e9ec;
+  width: 100%;
+  display: block;
+}
+.detail{
+  background-color: white;
+  padding: 16px;
+}
+/* Btn Ajoute*/
+.btnstandarajoute{
+  background-color: #0aa699;
+  width: 110px;
+  padding: 8px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  border-radius: 8px;
+}
+.btnstandarajoute a{
+  text-decoration: none;
+  width: 20px;
+  display: flex;
+}
+.btnstandarajoute img{
+  width: 32px;
+  height: 32px;
+  margin-right: 4px;
+}
+.btnstandarajoute label{
+  font-size: 24px;
+  color: white;
+  cursor: pointer;
+}
+.titrebar{
+  color: #333;
+  font-size: 28px;
+  font-weight: bold;
+}
+/* recherche bar */
+.standardrecherchebar{
+  padding: 16px;
+}
+/* form recherche bar */
+.standardrecherche{
+  display: flex;
+  justify-content: flex-start;
+}
+.standardrecherche input[type="text"]{
+  width: 220px;
+  padding: 8px;
+  font-size: 20px;
+  border: 1px solid var(--color);
+  border-radius: 8px 0px 0px 8px;
+}
+.standardrecherche button{
+  border: none;
+  background-color: var(--color);
+  color: white;
+  padding: 6px;
+  border-radius: 0px 8px 8px 0px;
+}
+/* bar page*/
+.suivprec img{
+  height: 16px;
+}
+.itemactiv{
+  background-color:  #0aa699;
+  border-radius: 9px;
+  color: white;
+}
+.listitem a{
+  color: black;
+  text-decoration: none;
+}
+.itemactiv a{
+  text-decoration: none;
+  color: white;
+}
+.tableinfo{
+  display: flex;
+  justify-content: flex-end;
+}
+.tableinfo ul{
+  list-style: none;
+  display: flex;
+}
+.tableinfo ul li{
+  padding: 8px;
+}
+/* table */
+.produittable{
+  padding: 16px;
+  border-collapse: collapse;
+  min-width:100%;
+}
+.produittable th, .produittable td{
+  text-align: left;
+  padding: 16px;
+}
+.produittable tbody tr:hover{
+background-color: #f1f1f1;
+}
+/* btn table modifie supprime */
+.produitbtn{
+    color: white;
+    text-decoration: none;
+    padding: 6px;
+    border-radius: 8px;
+    width: 40px;
+    margin-right: 8px;
+    cursor: pointer;
+}
+.produitbtnedit{
+  background-color: #1f3853;
+}
+.produitbtnsupprime{
+  background-color: #f35958;
+}
+.produitbtnconsulter{
+  background-color: #0aa699;
+}
+

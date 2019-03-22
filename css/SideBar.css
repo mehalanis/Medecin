@@ -1,0 +1,50 @@
+
+.sidebar{
+  background-color: #333;
+  width: 50px;
+  overflow: hidden;
+  transition: .1s;
+}
+.sidebarlogin{
+  height: 100px;
+}
+.sidebarlien{
+  text-decoration: none;
+}
+.sidebaritems{
+  display: grid;
+  grid-template-columns: auto;
+  grid-row-gap: 20px;
+}
+.sidebaritem{
+  display:  inline-flex;
+  justify-content: flex-start;
+  width: 100%;
+  padding: 8px;
+}
+.sidebaritem:hover{
+  background-color: #76767a;
+
+}
+
+.sidebaritem label{
+  color: White;
+  font-size: 24px;
+  opacity: 0;
+  cursor: pointer;
+}
+.sidebaritem img{
+  width: 30px;
+  height: 30px;
+  margin-right:  10px;
+}
+#sidebarcheckbox{
+  position: absolute;
+  opacity: 0;
+}
+#sidebarcheckbox:checked ~ .sidebar{
+  width: 230px;
+}
+#sidebarcheckbox:checked ~ .sidebar label{
+  opacity: 1;
+}

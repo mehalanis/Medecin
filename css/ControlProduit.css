@@ -1,0 +1,84 @@
+/* control input */
+.Controllistinput{
+  width: 60%;
+}
+.controlinput{
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.Controltableinfo{
+  width: 80%;
+}
+.ControltableinfoC1{
+  height: 50px;
+  width: 160px;
+}
+.controllabel{
+  font-size: 18px;
+}
+.controltext{
+  padding: 8px;
+  width: 100%;
+  font-size: 16px;
+}
+.ControlSelect{
+  width: 140px;
+  padding: 8px;
+  font-size: 16px;
+}
+/* table size */
+.controltable{
+  width: 60%;
+  border-collapse: collapse;
+}
+.controltable th,.controltable td{
+  text-align: left;
+  padding: 8px;
+}
+.controltable tr{
+  border-bottom: 1px solid black;
+}
+.controlplusmoins{
+  display:flex;
+}
+.controlbtnplusmoins{
+  width: 30px;
+  height: 25px;
+  border: none;
+  color: white;
+  font-size: 24px;
+}
+.controlbtnplus{
+  background-color:green;
+}
+.controlbtnmoins{
+  background-color:red;
+}
+/* cotrol img */
+.Controlimg{
+  width: 40%;
+  height: 80%;
+}
+.control{
+  display: flex;
+}
+.controlbutton{
+  margin-top: 18px;
+  width: 100%;
+  height: 50px;
+}
+/*control btn*/
+.controlbtn{
+  width: 250px;
+  height: 50px;
+  border: none;
+  border-radius: 20px;
+  font-size: 28px;
+}
+.controlbtnoperation{
+  background-color: #0aa699;
+  color: white;
+}
+.controlbtnannuler{
+  background-color: #e5e9ec;
+}

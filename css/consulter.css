@@ -1,0 +1,126 @@
+.consulterbar{
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+  display: flex;
+}
+.consulterbar a {
+  background-color: inherit;
+  color: black;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 24px;
+  padding: 14px 16px;
+  transition: 0.3s;
+}
+.consulterbar a:hover {
+  background-color: #ddd;
+}
+.consulterdetail:target {
+  display: block;
+  padding: 16px;
+}
+.consulterdetail{
+  display: none;
+  border: 1px solid #ccc;
+}
+/* ordonnance */
+.consulterOrdonnance{
+  display: flex;
+  justify-content: space-between;
+}
+.consultermedicamenttable{
+  width: 100%;
+  max-height: 500px;
+}
+.consultermedicamenttable td,.consultermedicamenttable th{
+  text-align: left;
+  padding: 8px;
+}
+.consulterajoutermedicament{
+  width: 40%;
+}
+.consulterOrdonnancelist{
+  width: 50%;
+}
+.consultertablec1{
+  width: 150px;
+}
+.consultermedicamentinput{
+  padding: 8px;
+  font-size: 18px;
+  width: 100%;
+}
+.consulterOrdonnancetable{
+  width: 250px;
+  text-align: left;
+  border-collapse: collapse;
+}
+.consulterOrdonnancetable td,.consulterOrdonnancetable th{
+  padding: 8px;
+  width: 50px;
+}
+.AjouteMedicament{
+  border: none;
+  padding: 8px;
+  background-color: #0aa699;
+  display: inline-flex;
+  justify-content: flex-end;
+  color: white;
+  font-size: 24px;
+  border-radius: 8px
+}
+/* table archives*/
+.consultertable{
+  width: auto;
+  border-collapse: collapse;
+}
+.consultertable th,.consultertable td{
+  text-align: left;
+  font-size: 18px;
+  padding: 16px;
+}
+
+.consultertable tbody tr:hover{
+background-color: #f1f1f1;
+}
+.consulterbtn{
+    color: white;
+    border: none;
+    padding: 8px;
+    border-radius: 8px;
+    margin-right: 8px;
+    cursor: pointer;
+    background-color: #1f3853;
+}
+/*   */
+.consulterordonnance{
+  width: 60%;
+}
+.consulterarchives{
+  display: flex;
+  justify-content: space-between;
+}
+/* consulte table  */
+.consultertable td,.consultertable th{
+  text-align: left;
+  padding: 8px;
+}
+#ConsulterOrdonnanceicon{
+  width: 24px;
+}
+#rowtableordonnance{
+  display: none;
+}
+.hiddeninput,.hiddeninputnbrboit{
+  border: none;
+  font-size: 20px;
+  width: auto;
+}
+.hiddeninputnbrboit{
+  width: 120px;
+}
+.btndelete{
+  width: auto;
+  border: none;
+  background-color: white;
+}

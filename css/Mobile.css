@@ -1,0 +1,56 @@
+@media (max-width:450px) {
+  /* nav bar navbar.html*/
+  .btnmenu{
+    height: 12px;
+    width: 12px;
+    margin-left: 5px;
+    margin-top: 6px;
+  }
+  .navbar{
+    height: 35px;
+  }
+  /* side bar sidebar.html*/
+  .sidebar{
+    position: absolute;
+    height: 0;
+    width: 0;
+  }
+  #sidebarcheckbox:checked ~ .sidebar{
+    height: 100%;
+    width: 100%;
+  }
+  .sidebaritem img{
+    width: 22px;
+    height: 22px;
+    margin-right:  10px;
+  }
+  /*produit table produit.php*/
+  .produittable{
+    width: 90%;
+  }
+  .produittable th,.produittable td{
+    text-align: left;
+    padding-top: 12px;
+    padding-bottom: 12px;
+  }
+  .produitpasimportant{
+    display: none;
+  }
+  /*Control produit.html*/
+  .control{
+    display: block;
+  }
+  .Controllistinput{
+    width: 100%;
+  }
+  .Controltableinfo{
+    width: 80%;
+  }
+  .controlinputtable{
+    width: 60px;
+  }
+  .controlbtn{
+    width: 120px;
+    margin-right: 18px;
+  }
+}

@@ -1,0 +1,17 @@
+*{
+	font-family: sans-serif;
+}
+.navbar{
+  background-color:#0aa699;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.btnmenu{
+  padding: 12px;
+  padding-bottom: 8px;
+}
+.navbarbtnexit{
+	background: none;
+	border: none;
+}
