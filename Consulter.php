@@ -116,6 +116,7 @@ if(isset($_GET["idMaladeConsulter"])){
                         <tr>
                           <th>Motif</th>
                           <th>Date</th>
+                          <th>medecin</th>
                           <th>Opperation</th>
                         </tr>
                       </thead>
@@ -135,7 +136,7 @@ if(isset($_GET["idMaladeConsulter"])){
                             $page=1;
                           }
                         if(isset($_GET["idMaladeConsulter"])){
-                          $result=$database->query("select id_ordonnance,motif,date_format(date,'%d/%m/%Y %H:%i') from ordonnance where id_malade="
+                          $result=$database->query("select id_ordonnance,motif,date_format(date,'%d/%m/%Y %H:%i'),CONCAT('Dr ',nom,' ',prenom) from ordonnance join user on ordonnance.id_user=user.id_user where id_malade="
                                                  .$_GET["idMaladeConsulter"]." order by date DESC limit $debut,10 ");
 
                           while ($row=mysqli_fetch_assoc($result)) {
@@ -175,7 +176,7 @@ if(isset($_GET["idMaladeConsulter"])){
                        }
                        $suivant=$page*10;
                        $result=$database->query("select id_ordonnance from ordonnance  limit $suivant ,2");
-             
+
                        if(isset($_GET['page'])){$suivant=$_GET['page'];}else{$suivant=1;}
                        if(mysqli_num_rows($result)>0){
                          $suivant++;

@@ -1,4 +1,4 @@
-@media (max-width:450px) {
+@media (max-width:800px) {
   /* nav bar navbar.html*/
   .btnmenu{
     height: 12px;
@@ -7,7 +7,7 @@
     margin-top: 6px;
   }
   .navbar{
-    height: 35px;
+    height: 50px;
   }
   /* side bar sidebar.html*/
   .sidebar{

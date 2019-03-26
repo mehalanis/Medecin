@@ -38,7 +38,14 @@ include 'php/verefieuser.php';
                 </div>
               </div>
             </a>
-
+            <a href="user.php">
+              <div class="boxbtn">
+                Réglage
+                <div class="boxbtnimage">
+                  <img src="img/setting100pxwhite.png" alt="">
+                </div>
+              </div>
+            </a>
           </div>
         </div>
       </div>

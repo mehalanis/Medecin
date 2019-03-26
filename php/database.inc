@@ -3,7 +3,7 @@ class database{
   public $connection;
   public function __construct()
   {
-    $this->connection=mysqli_connect("localhost","root","","medecine");
+    $this->connection=mysqli_connect("localhost","root","","medecin");
     if(mysqli_connect_errno())echo "erreur connect database";
   }
   public function query($sql)

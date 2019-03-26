@@ -5,8 +5,8 @@ include 'php/verefieuser.php';
 if(isset($_POST["AjouteMalade"])){
   require "php/Malade.inc";
   $malade=new Malade("",$_POST["matricule"],$_POST["nom"],$_POST["prenom"],$_POST["date_naissance"]);
-  $malade->InsertMalade();
-  header("location: Malade.php");
+  $id=$malade->InsertMalade();
+  header("location: Consulter.php?idMaladeConsulter=".$id."#Ordonnance");
 }elseif(isset($_POST["ModifieMalade"])){
   require "php/Malade.inc";
   $malade=new Malade($_POST["id_malade"],$_POST["matricule"],$_POST["nom"],$_POST["prenom"],$_POST["date_naissance"]);

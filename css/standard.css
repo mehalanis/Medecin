@@ -140,4 +140,12 @@ background-color: #f1f1f1;
 .produitbtnconsulter{
   background-color: #0aa699;
 }
+/* alerte */
 
+.AlertConfirme{
+  border: 1px solid #0aa699;
+  border-radius: 8px;
+  background-color: #0aa6991a;
+  color: #333;
+  padding: 8px;
+}

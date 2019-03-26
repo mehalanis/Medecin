@@ -25,13 +25,17 @@ body{
   flex-wrap: wrap;
   justify-content: space-between;
 }
-.email{
+.form{
   display: flex;
   flex-wrap: wrap;
   justify-content:center;
   align-items: center;
   width: 380px;
   height: 250px;
+}
+.form_hidden{
+  display: none;
+  height: 750px;
 }
 .member{
   font-family:  sans-serif;
@@ -41,6 +45,7 @@ body{
   color: #333333;
 }
 .input{
+  display: flex;
   text-align: center;
   display: block;
   padding: 10px;
@@ -58,9 +63,11 @@ body{
   border-color: black;
   height: 30px;
 }
-
+.text:required{
+  border:1px solid #ededed;
+}
 .icon{
-  width: 20px;
+  width: 24px;
   margin-right: 20px;
 }
 .btn{
@@ -94,4 +101,15 @@ background-color: #5A8ABB;
 .erreur label{
   font-size: 18px;
   color: red;
+}
+.btn_creer{
+  margin-top: 24px;
+  text-decoration: none;
+  font-family: Poppins-Regular;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #999999;
+}
+.btn_creer:hover{
+  color: #5A8ABB;
 }

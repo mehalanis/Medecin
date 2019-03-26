@@ -2,18 +2,26 @@
 
 //require_once('TCPDF/tcpdf.php');
 require_once('TCPDF/tcpdf_import.php');
-
+session_start();
 require 'php/database.inc';
 if(isset($_POST["idMalade"])){
 $idMalade=$_POST["idMalade"];
 unset($_POST["idMalade"]);
 $database=new database();
+$result=$database->query("select region.nom as region from user join region on user.id_region = region.id_region where id_user="
+                                                                                                       .$_SESSION["id_user"]);
+$row=mysqli_fetch_assoc($result);
+$region_user=$row["region"];
+
 $result=$database->query("select nom,prenom,year(date_naissance) as ans from malade where id_malade=".$idMalade);
 $row=mysqli_fetch_assoc($result);
 $age=date("Y")-$row["ans"];
 
-$result=$database->query("insert into ordonnance(id_malade,motif,date) values (".$idMalade.",'".$_POST['motif']."',timestamp(now()))");
+$result=$database->query("insert into ordonnance(id_malade,id_user,motif,date) values (".$idMalade." , "
+                       .$_SESSION['id_user']." ,'".$_POST['motif']."',timestamp(now()))");
 $idordonnance=$database->insertid();
+
+
 
 $pdf = new TCPDF(PDF_PAGE_ORIENTATION, PDF_UNIT, "A5", true, 'UTF-8', false);
 
@@ -61,7 +69,7 @@ $pdf->writeHTML("<label>".$age."</label>", true, false, true, false, '');
 
 $pdf->SetY(61,true,false);
 $pdf->SetX(16,false);
-$pdf->writeHTML("<label>Blida</label>", true, false, true, false, '');
+$pdf->writeHTML("<label>".$region_user."</label>", true, false, true, false, '');
 
 $date= date("d/m/Y");
 

@@ -20,6 +20,7 @@ class Malade{
     $result=$database->query("insert into malade(matricule,nom,prenom,date_naissance)
             values ('".$this->matricule."','".$this->nom."','".$this->prenom."','".$this->date."')");
     if(!$result) { die("error");}
+    return $database->insertid();
   }
   public function ModifieMalade()
   {
